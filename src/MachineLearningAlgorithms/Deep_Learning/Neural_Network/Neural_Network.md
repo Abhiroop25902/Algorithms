@@ -283,6 +283,6 @@ This means that the model will give very good results with the models he has alr
 
 # Conclusion
 
-I have added the .ipynb notebook in the same directory as this .md file if you wanna see this in action.
+I have also provided a .ipynb file [here](https://github.com/codeiiest-dev/Algorithms/blob/main/src/MachineLearningAlgorithms/Deep_Learning/Neural_Network/fashion_MNIST.ipynb), I you wanna see the codes in action.
 
 Hope you have found my guide informative. 😄

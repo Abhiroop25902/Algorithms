@@ -38,3 +38,5 @@
 - [Machine Learning Algorithms](./MachineLearningAlgorithms/README.md)
   - [Regression](./MachineLearningAlgorithms/Regression/Regression.md)
     - [Linear Regression](./MachineLearningAlgorithms/Regression/LinearRegression/LinearRegression.md)
+  - [Deep Learning](./MachineLearningAlgorithms/Deep_Learning/Deep_Learning.md)
+    - [Neural Network](./MachineLearningAlgorithms/Deep_Learning/Neural_Network/Neural_Network.md)

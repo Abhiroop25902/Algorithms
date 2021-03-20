@@ -246,3 +246,8 @@ A Sample graph from the above code...
 
 # Conclusion
 
+I have linked a .ipynb file [Here](https://github.com/Abhiroop25902/Algorithms/blob/Linear-Regression-Matrix/src/MachineLearningAlgorithms/Regression/LinearRegression/Linear_Regression_using_Matrix_Multiplication/One%20Variable/Linear_Regression.ipynb), if you want to see the code in action, do note that the dataset will not be accessible if you will open the file in colab, you have to download that from [Here](https://github.com/Abhiroop25902/Algorithms/blob/Linear-Regression-Matrix/src/MachineLearningAlgorithms/Regression/LinearRegression/Linear_Regression_using_Matrix_Multiplication/One%20Variable/ex1data1.txt) (This dataset is taken from the Course Assignment)
+
+Here is a [Link](https://www.coursera.org/learn/machine-learning?utm_source=gg&utm_medium=sem&utm_campaign=07-StanfordML-IN&utm_content=07-StanfordML-IN&campaignid=1950458127&adgroupid=71501032500&device=c&keyword=coursera%20machine%20learning&matchtype=e&network=g&devicemodel=&adpostion=&creativeid=415449761695&hide_mobile_promo&gclid=Cj0KCQjwutaCBhDfARIsAJHWnHvl1Ah04P3V4JqHJPrV7FM_kcQKVfYLhgsc2G_1I4autUgiCblb4AoaAnxjEALw_wcB) to the Machine Learning Course I was talking about...
+
+Hope You Have Liked The Document 😁

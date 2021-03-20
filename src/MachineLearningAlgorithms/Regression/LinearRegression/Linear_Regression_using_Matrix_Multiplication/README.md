@@ -13,3 +13,10 @@ This is divided into two parts:
     -   here we generalize the one variable algorithm to take in multiple independent variables, which we collectively call the input matrix X
 
 so, Good Luck, and Happy Learning... 😁
+
+<hr>
+
+## Topics Covered
+
+-   [One Variable Linear Regression](./1_One_Variable/README.md)
+-   [Multiple Variable Linear Regression](./2_Multiple_Variable/README.md)

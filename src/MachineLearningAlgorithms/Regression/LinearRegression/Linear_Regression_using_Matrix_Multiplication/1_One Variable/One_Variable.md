@@ -9,7 +9,6 @@ Importing required libraries...
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
-import time
 ```
 
 ## Functions to be used...
@@ -36,7 +35,6 @@ Outputs Y, Given X, by parameter &theta;
 
 Vector Form is implemented here for faster Operation.
 
-
 ```python
 def hypothesis(x, theta):
     '''calculates the hypothesis function'''
@@ -47,18 +45,17 @@ def hypothesis(x, theta):
 
 This essentially calculates the distance between what we need the line to be, and what it actually is:
 
-
 1. Definition:
-    -   m -> number of elements in the dataset
-    -   x<sup>(i)</sup> -> value of x in i<sup>th</sup> data point
-    -   y<sup>(i)</sup> -> value of y in i<sup>th</sup> data point
+    - m -> number of elements in the dataset
+    - x<sup>(i)</sup> -> value of x in i<sup>th</sup> data point
+    - y<sup>(i)</sup> -> value of y in i<sup>th</sup> data point
 
 <p align="center"><img src="./Sources/cost_function_equation.jpg" ></p>
 
 2. Vector Form for faster implementation
-    -   m -> number of elements in the dataset
-    -   h(&theta;, X) and Y -> mx1 matrix
-    -   Outputs 1x1 matrix
+    - m -> number of elements in the dataset
+    - h(&theta;, X) and Y -> mx1 matrix
+    - Outputs 1x1 matrix
 
 <p align="center"><img src="./Sources/cost_function_matrix.jpg" ></p>
 
@@ -87,7 +84,7 @@ where
 
 This algorithm iteratively minimizes J(&theta; ,x) to reach it's minimum possible value
 
-- Vector Implementation to speed up Algorithm: 
+-   Vector Implementation to speed up Algorithm:
     -   m -> dataset size
     -   X -> mx2 matrix
     -   h(&theta;, X) and Y -> mx1 matrix
@@ -111,9 +108,9 @@ def gradient_descent(x, y, theta, alpha, num_iter):
     return theta, J_history
 ```
 
-### Predict 
- 
- uses hypothesis() to predict value of new input
+### Predict
+
+uses hypothesis() to predict value of new input
 
 ```python
 def predict(value, theta):
@@ -134,7 +131,7 @@ data_path = "./ex1data1.txt"
 data = np.loadtxt(data_path, delimiter=',')
 ```
 
-###  Extracting Population and Profits from data
+### Extracting Population and Profits from data
 
 ```python
 # first value is independent variable x, second is dependant y
@@ -153,6 +150,7 @@ plt.scatter(independent_x, dependant_y, marker="x", c="r")
 plt.ylabel('Profit in $10,000s')
 plt.xlabel('Population of City in 10,000s')
 ```
+
 These lines of codes output this graph
 
 <p align="center"><img src="./Sources/scatterplot.png" ></p>
@@ -161,7 +159,7 @@ These lines of codes output this graph
 
 as x and y are 1D vector, they have to converted to their respective matrix form
 
-Also as we are about to do a Matrix Multiplication, to simulate h<sub>&theta;</sub>(x) = &theta;<sub>0</sub> + &theta;<sub>1</sub> * x , we are appending 1 to every rows of x to simulate addition of &theta;<sub>0</sub> by matrix multiplication.
+Also as we are about to do a Matrix Multiplication, to simulate h<sub>&theta;</sub>(x) = &theta;<sub>0</sub> + &theta;<sub>1</sub> \* x , we are appending 1 to every rows of x to simulate addition of &theta;<sub>0</sub> by matrix multiplication.
 
 ```python
 # as we are going to use matrix multiplication, we need x as first column 1, second column values
@@ -196,7 +194,7 @@ print("Running Gradient Descent ...\n")
 minimized_theta, J_history = gradient_descent(x, y, theta, alpha, num_iter)
 ```
 
-### Plotting Value of J during Gradient Descent 
+### Plotting Value of J during Gradient Descent
 
 If there is value of &alpha; is not high, this should decrease with epochs
 
@@ -208,6 +206,7 @@ plt.xlabel('No. of iterations or Epochs')
 plt.ylabel("Cost function J")
 plt.plot(x_axis,J_history)
 ```
+
 A sample graph generated from this...
 
 <p align="center"><img src="./Sources/history.png" ></p>
